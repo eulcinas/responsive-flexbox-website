@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body {
+    background: #3cb371;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.box-1 {
+    background: white;
+    width: 800px;
+    height: auto;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.box-2 {
+    background: white;
+    width: 400px;
+    height: auto;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.box-3 {
+    background: white;
+    width: 400px;
+    height: 220px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.box-image-1 {
+    background-image: url(https://s3.amazonaws.com/cms-assets.tutsplus.com/uploads/users/1366/posts/26611/attachment/image-01.png);
+    height: 500px;
+    margin-bottom: 15px;
+    background-size: cover;
+}
+
+.box-image-2 {
+    background-image: url(https://s3.amazonaws.com/cms-assets.tutsplus.com/uploads/users/1366/posts/26611/attachment/image-02.png);
+    height: 500px;
+    margin-bottom: 15px;
+    background-size: cover;
+}
+
+.box-image-3 {
+    background-image: url(https://s3.amazonaws.com/cms-assets.tutsplus.com/uploads/users/1366/posts/26611/attachment/image-03.png);
+    height: 220px;
+    margin-bottom: 15px;
+    background-size: cover;
+}
+
+h2 {
+    padding: 15px;
+}
+
+p {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    color: rgba(0, 0, 0, 0.705);
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    height: auto;
+    color: rgba(0, 0, 0, 0.705);
+}
+
+@media (min-width: 320px) and (max-width: 600px) {
+    .container-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    .box-1, .box-2, .box-3 {
+        width: 80%;
+        height: auto;
+    }
+
+    .box-image-1, .box-image-2, .box-image-3 {
+        background-position: center;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1280px) {
+    .container-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    .box-1, .box-2, .box-3 {
+        width: 80%;
+        height: auto;
+    }
+
+    .box-image-1, .box-image-2, .box-image-3 {
+        background-position: center;
+    }
+}
